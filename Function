@@ -1,0 +1,13 @@
+import whois
+import socket
+
+x = input("Enter URL")
+
+def get_ip_address(url):
+    results = socket.gethostbyname(url)
+    return results
+
+print(whois.whois(x))
+print(get_ip_address(x))
+
+
